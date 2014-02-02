@@ -1,24 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.isi.bmkeg</groupId>
-  <artifactId>triage</artifactId>
+  <artifactId>vpdmf-triage</artifactId>
   <version>1.1.5-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>triage</name>
+  <name>vpdmf-triage</name>
   
   	<parent>
 	    <groupId>edu.isi.bmkeg</groupId>
-	    <artifactId>vpdmf-model-parent</artifactId>
+	    <artifactId>vpdmf-parent</artifactId>
 	    <version>1.1.5-SNAPSHOT</version>
-	    <relativePath>../vpdmf-model-parent</relativePath>
+	    <relativePath>../vpdmf-parent</relativePath>
  	</parent>
 
  	<properties>
 		<vpdmf.model.type>MagicDraw</vpdmf.model.type>
-		<vpdmf.model.path>triage.xml</vpdmf.model.path>
+		<vpdmf.model.path>vpdmf-triage.xml</vpdmf.model.path>
 		<vpdmf.viewsPath>specs</vpdmf.viewsPath>
 		<vpdmf.uimaPkgPattern>.model.</vpdmf.uimaPkgPattern>
-		<vpdmf.nestedModels>${basedir}/../people/ ${basedir}/../terminology/ ${basedir}/../ftd/ ${basedir}/../digitalLibrary/</vpdmf.nestedModels>  	
+		<vpdmf.nestedModels>${basedir}/../vpdmf-people/ ${basedir}/../vpdmf-terminology/ ${basedir}/../vpdmf-ftd/ ${basedir}/../vpdmf-digitalLibrary/</vpdmf.nestedModels>  	
  	</properties>
   
  	<build>
